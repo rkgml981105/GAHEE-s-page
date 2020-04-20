@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>GAHEE's page</title>
+        <style>
+            body{
+                margin: 0;
+            }
+            .grid{
+                display: grid;
+                grid-template-columns: 1fr 300px;
+            }
+            h2{
+                font-size: 50px;
+                padding-top: 10px;
+                text-align: center;
+            }
+            .profile{
+                padding: 0 30px;
+                justify-self: center;
+            }
+            .profile-img{
+                padding-bottom: 50px;
+                width: 1000px;
+                height: 700px;
+            }
+            .about-me{
+                display: block;
+                border: 3px rgb(46, 52, 63) solid;
+                box-sizing: border-box;
+                width: 1000px;
+                padding: 15px 10px;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            .comment{
+                display: block;
+                border: 3px rgb(46, 52, 63) solid;
+                margin: 20px 0 300px;
+                box-sizing: border-box;
+                width: 1000px;
+                padding: 0 10px 20px;
+                font-size: 18px;
+            }
+            h3{
+                font-size: 30px;
+            }
+            .nav{
+                background-color: rgb(46, 52, 63);
+                padding: 15px;
+            }
+            li{
+                color:blanchedalmond;
+                font-weight: bold;
+                padding: 10px 0;
+            }
+            #contact{
+                display: flex;
+                justify-content: center;
+                padding: 30px;
+                border-top:rgb(46, 52, 63) solid 5px;
+
+            }
+            .insta, .facebook, .github, .email{
+                width: 50px;
+                height: 50px;
+                padding: 0 20px;
+            }
+           
+
+        </style>
+    </head>
+    <body>
+        <div class="grid">
+            <div class="profile">
+                <h2>"KEEP CALM AND DO YOUR WORK."</h2>
+                <img class="profile-img" src="https://aer.eu/wp-content/uploads/2020/02/sergey-shmidt-koy6FlCCy5s-unsplash.jpg" alt="spring is my favorite season">
+                <div class="about-me">
+                    <div>NAME: Gahee Kim</div>
+                    <div>DOB: 1998. 11. 05</div>
+                    <div>GENDER: female</div>
+                    <div>STATUS: student</div>
+                    <div>HOBBY: watching netflix</div>
+                </div>
+                <div class="comment">
+                    <h3>HI,</h3>
+                    <p>This is Gahee's page. I just started learning coding with likelion SKKU, and it is pretty fun. I am planning to fill this page with my own projects. Or it could be a page for study notes for coding!</p>
+                </div>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="welcome.html"></a>PROFILE</li>
+                    <li>PROJECT</li>
+                    <li><a href="#contact"></a>CONTACT</li>
+                </ol>
+            </div>
+        </div>
+        <div id="contact">
+            <img class="insta" src="instagram icon.png" alt="contact via instagram">
+            <img class="facebook" src="facebook icon.png" alt="contact via facebook">
+            <img class="github" src="github icon.png" alt="contact via github">
+            <img class="email" src="email icon.png" alt="contact via email">
+        </div>
+    </body>
+
+</html>
