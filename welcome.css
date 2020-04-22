@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 300px;
+}
+h2{
+    font-size: 50px;
+    padding-top: 10px;
+    text-align: center;
+}
+.profile{
+    padding: 0 30px;
+    justify-self: center;
+}
+.profile-img{
+    padding-bottom: 50px;
+    width: 1000px;
+    height: 700px;
+}
+.about-me{
+    display: block;
+    border: 3px rgb(46, 52, 63) solid;
+    box-sizing: border-box;
+    width: 1000px;
+    padding: 15px 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.comment{
+    display: block;
+    border: 3px rgb(46, 52, 63) solid;
+    margin: 20px 0 300px;
+    box-sizing: border-box;
+    width: 1000px;
+    padding: 0 10px 20px;
+    font-size: 18px;
+}
+h3{
+    font-size: 30px;
+}
+.nav{
+    background-color: rgb(46, 52, 63);
+    padding: 15px;
+}
+li{
+    color:blanchedalmond;
+    font-weight: bold;
+    padding: 10px 0;
+}
+#contact{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    border-top:rgb(46, 52, 63) solid 5px;
+
+}
+.insta, .facebook, .github, .email{
+    width: 50px;
+    height: 50px;
+    padding: 0 20px;
+}
