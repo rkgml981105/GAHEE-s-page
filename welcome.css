@@ -3,7 +3,8 @@ body{
 }
 .grid{
     display: grid;
-    grid-template-columns: 1fr 300px;
+    grid-template-rows: 1fr 400px;
+    justify-content: center;
 }
 h2{
     font-size: 50px;
@@ -13,7 +14,6 @@ h2{
 }
 .profile{
     padding: 0 30px;
-    justify-self: center;
 }
 .profile-img{
     padding-bottom: 50px;
@@ -35,39 +35,42 @@ h2{
     margin: 20px 0 200px;
     box-sizing: border-box;
     width: 1000px;
-    padding: 0 10px 20px;
+    padding: 15px 10px;
     font-size: 18px;
+    justify-self: center;
 }
 h3{
     font-size: 30px;
 }
-.nav{
+#nav{
     background-color: rgb(46, 52, 63);
-    padding: 15px;
 }
-li{
-    color:blanchedalmond;
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+    color: blanchedalmond;
+    text-decoration: underline;
+    background-color: transparent;
+}
+a{
+    color: blanchedalmond;
     font-weight: bold;
-    padding: 15px 0;
     font-size: 17px;
 }
-.linked{
-    color: blanchedalmond;
-}
-.linked:hover{
+.nav-pills>li>a:hover, .nav-pills>li.active>a:hover{
+    color: rgb(121, 104, 79);
     font-weight: bolder;
-    color: rgb(138, 124, 105);
-    text-decoration: none;
+    background-color: blanchedalmond;
 }
-
+li{
+    padding: 15px 0;
+}
 #contact{
     display: flex;
     justify-content: center;
     padding: 30px;
     border-top:rgb(46, 52, 63) solid 5px;
-
+    width: 100%;
 }
-.insta, .facebook, .github, .email{
+.insta, .github, .email{
     width: 90px;
     height: 40px;
     padding: 0 20px;

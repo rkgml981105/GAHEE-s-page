@@ -1,0 +1,22 @@
+td{
+    border: 3px solid rgb(56, 59, 56);
+    width: 180px;
+    height: 180px;
+    background-color: rgb(83, 110, 83);
+    text-align: center;
+    color: rgb(243, 243, 243);
+    border-radius: 8px;
+    box-shadow: 8px 8px darkgrey;
+}
+table{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(rgb(59, 68, 59),rgb(174, 194, 174));
+}
+footer{
+    margin-top: 50px;
+}

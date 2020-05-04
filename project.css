@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+}
+#nav{
+    background-color: rgb(46, 52, 63);
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+    color: blanchedalmond;
+    text-decoration: underline;
+    background-color: transparent;
+}
+a{
+    color: blanchedalmond;
+    font-weight: bold;
+    font-size: 17px;
+}
+.nav-pills>li>a:hover, .nav-pills>li.active>a:hover{
+    color: rgb(121, 104, 79);
+    font-weight: bolder;
+    background-color: blanchedalmond;
+}
+li{
+    padding: 15px 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+@media (min-width: 992px){
+   .col-md-4 {
+    width: 40%;
+   }
+}
+
+#contact{
+    padding: 30px;
+    border-top:rgb(46, 52, 63) solid 5px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.insta, .github, .email{
+    width: 90px;
+    height: 40px;
+    padding: 0 20px;
+}
