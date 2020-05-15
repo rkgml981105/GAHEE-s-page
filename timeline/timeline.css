@@ -1,0 +1,114 @@
+h1{
+    margin-top: 80px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(46, 52, 63);
+    font-size: 70px;
+}
+body{
+    background-color: rgb(214, 221, 236);
+}
+.content{
+    margin-top: 10%;
+    padding: 0 10%;
+}
+.changebg{
+    display: inline-block;
+    border: 2px solid rgb(153, 146, 219, 0.4);
+    border-radius: 10px;
+    background-color: rgb(194, 193, 226);
+    padding: 5px 8px;
+    color: rgb(100, 99, 128);
+    font-weight: 600;
+    width: 90px;
+    height: 30px;
+}
+img{
+    position: relative;
+    right: 20px;
+    bottom: 25px;
+    width: 90%;
+    grid-column: 1;
+    background-color: white;
+    border-radius: 100%;
+}
+.card{
+    position: relative;
+    display: grid;
+    grid-template-columns: 60px auto 30px;
+    width: 40%;
+    padding: 15px 0;
+    margin-bottom: 5%;
+    border: 2.5px solid rgb(46, 52, 63);
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px rgba(149, 150, 153, 0.6);
+    transition: 0.4s;
+    background-color: white;
+    color: rgb(46, 52, 63);
+}
+.card:hover{
+    background-color: rgba(170, 176, 189, 0.8); 
+
+}
+.date, .what{
+    grid-column: 2;
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+}
+.where, .text{
+    grid-column: 2;
+    position: relative;
+}
+.dot{
+    position: absolute;
+    right: -26.2%;
+    top: 40%;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(46, 52, 63);
+    border-radius: 100%;
+    
+}
+.line{
+    width: 5px;
+    height: 190%;
+    background-color: rgb(46, 52, 63);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -2.5px;
+}
+.card:nth-child(even){
+    margin-left: 60%;
+}
+.card:nth-child(even) .dot{
+    left: -27%;
+}
+.buttons{
+    text-align: center;
+}
+#tothetop{
+    position: fixed;
+    left: 0px;
+    bottom: 100px;
+    border-radius: 100%;
+    border: 3px solid rgb(148, 148, 182);
+    background-color: rgb(46, 52, 63);
+    color: white;
+    width: 50px;
+    height: 50px;
+}
+
+@media(max-width:1000px){
+    .dot, .line{
+        display: none;
+    }
+    .card{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .card:nth-child(even){
+        margin-left: 10%;
+    }
+}

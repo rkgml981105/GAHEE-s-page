@@ -31,23 +31,22 @@ li{
     justify-content: center;
     margin: 100px 0;
 }
-
 @media (min-width: 992px){
    .col-md-4 {
     width: 40%;
    }
 }
 
-#contact{
-    padding: 30px;
-    border-top:rgb(46, 52, 63) solid 5px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-}
 .insta, .github, .email{
     width: 90px;
     height: 40px;
     padding: 0 20px;
+}
+#contact{
+    padding: 30px;
+    border-top:rgb(46, 52, 63) solid 5px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
