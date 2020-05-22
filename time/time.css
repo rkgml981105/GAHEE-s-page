@@ -1,0 +1,32 @@
+body{
+    background-image: url(sunset.jpg);
+    background-size: cover;
+}
+.content{
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    left: 25%;
+    top: 35%;
+    text-align: center;
+}
+.window{
+    border: 5px solid black;
+    border-radius: 5%;
+    height: 80%;
+}
+#w_stopwatch, #w_timer{
+    display: none;
+}
+input[type=number]{
+    width: 50px;
+}
+h1{
+    font-size: 80px;
+    margin: 10px 0px 0px;
+    text-shadow: 3px 3px rgb(212, 212, 212);
+}
+h3{
+    margin: 10px 0px 0px;
+    font-size: 30px;
+} 

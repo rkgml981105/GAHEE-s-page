@@ -10,16 +10,20 @@
 
         <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="password.js"></script>
         <link rel="stylesheet" href="welcome.css">
         <meta charset="utf-8">
         <title>GAHEE's page</title>
     </head>
     <body>
         <ul class="nav nav-pills nav justified" id="nav">
-            <li role="presentation" class="active"><a href="welcome.html">PROFILE</a></li>
-            <li role="presentation"><a href="project.html">PROJECT</a></li>
-            <li role="presentation"><a href="contact.html">CONTACT</a></li>
+            <li role="presentation" class="active"><a href="welcome.html">PROFILE</a></li>s
+            <li role="presentation" onclick="password(this)"><a>PROJECT</a></li>
+            <li role="presentation"><a href="../contact/contact.html">CONTACT</a></li>
         </ul>
+        <div class="daynight"></div>
+        <button id="day_night" value="night" onclick="day_nightHandler(this)"></button>
         <div class="grid">
             <div class="profile">
                 <h2>"KEEP CALM AND DO YOUR WORK."</h2>
@@ -38,10 +42,10 @@
             </div>  
         </div>
         <div id="contact">
-            <a href="https://www.instagram.com/gaheeisland/?hl=ko" title="visit instagram" target="_blank"><img class="insta" src="instagram icon.png" alt="contact via instagram"></a>
-            <a href="https://github.com/rkgml981105" title="visit github" target="_blank"><img class="github" src="github icon.png" alt="contact via github"></a>
-            <a href="mailto:rkgml981105@gmail.com" title="send an email"><img class="email" src="email icon.png" alt="contact via email"></a>
+            <a href="https://www.instagram.com/gaheeisland/?hl=ko" title="visit instagram" target="_blank"><img class="insta" src="../contact/instagram icon.png" alt="contact via instagram"></a>
+            <a href="https://github.com/rkgml981105" title="visit github" target="_blank"><img class="github" src="../contact/github icon.png" alt="contact via github"></a>
+            <a href="mailto:rkgml981105@gmail.com" title="send an email"><img class="email" src="../contact/email icon.png" alt="contact via email"></a>
         </div>
+        <script type="text/javascript" src="day_night.js"></script>
     </body>
-
 </html>

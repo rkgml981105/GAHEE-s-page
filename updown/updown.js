@@ -12,7 +12,7 @@ formBtn.onclick = (event) => {
     life -= 1;
     displayLife.textContent = life;
     const userInput = Number(inputTag.value);
-    const result = document.createElement('h2');
+    const result = document.createElement('h2'); 
     result.textContent = userInput + " 👉 ";
 
     if (userInput === answer) {
