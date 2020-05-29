@@ -27,6 +27,14 @@ body{
     grid-template-rows: 1fr 400px;
     justify-content: center;
 }
+.js-weather{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px;
+    border: 1.5px solid rgb(46, 52, 63, 0.7);
+    font-size: 16px;
+    color: rgb(46, 52, 63);
+}
 h2{
     font-size: 50px;
     padding: 25px 0;
@@ -83,6 +91,9 @@ a{
 }
 li{
     padding: 15px 0;
+}
+#disqus_thread{
+    padding-bottom: 100px;
 }
 #contact{
     display: flex;

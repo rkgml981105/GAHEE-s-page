@@ -18,7 +18,7 @@
     </head>
     <body>
         <ul class="nav nav-pills nav justified" id="nav">
-            <li role="presentation" class="active"><a href="welcome.html">PROFILE</a></li>s
+            <li role="presentation" class="active"><a href="welcome.html">PROFILE</a></li>
             <li role="presentation" onclick="password(this)"><a>PROJECT</a></li>
             <li role="presentation"><a href="../contact/contact.html">CONTACT</a></li>
         </ul>
@@ -26,6 +26,7 @@
         <button id="day_night" value="night" onclick="day_nightHandler(this)"></button>
         <div class="grid">
             <div class="profile">
+                <div class="js-weather"></div>
                 <h2>"KEEP CALM AND DO YOUR WORK."</h2>
                 <img class="profile-img" src="https://aer.eu/wp-content/uploads/2020/02/sergey-shmidt-koy6FlCCy5s-unsplash.jpg" alt="spring is my favorite season">
                 <div class="about-me">
@@ -40,6 +41,27 @@
                 <h3>HI,</h3>
                 <p>This is Gahee's page. I just started learning coding with likelion SKKU, and it is pretty fun. I am planning to fill this page with my own projects. Or it could be a page for study notes for coding!</p>
             </div>  
+
+            <div id="disqus_thread"></div>
+            <script>
+
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://rkgml981105.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>               
         </div>
         <div id="contact">
             <a href="https://www.instagram.com/gaheeisland/?hl=ko" title="visit instagram" target="_blank"><img class="insta" src="../contact/instagram icon.png" alt="contact via instagram"></a>
@@ -47,5 +69,6 @@
             <a href="mailto:rkgml981105@gmail.com" title="send an email"><img class="email" src="../contact/email icon.png" alt="contact via email"></a>
         </div>
         <script type="text/javascript" src="day_night.js"></script>
+        <script type="text/javascript" src="weather.js"></script>
     </body>
 </html>
