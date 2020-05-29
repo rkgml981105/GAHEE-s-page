@@ -1,13 +1,16 @@
-const startbtn = document.querySelector('#start');
-const resetbtn = document.querySelector('#reset');
+const startbtn = document.querySelector('#timer_start');
+const resetbtn = document.querySelector('#timer_reset');
 
 
 let timerFunction = function(){
     let minutes = document.querySelector("#m_timer").value;
     let seconds = document.querySelector("#s_timer").value;
-    seconds--;
+    
     if(seconds < 0) {
         minutes--;
+        seconds = 59;
+    } else {
+        seconds--;
     }
     
     if(minutes < 10) minutes = '0' + minutes;
@@ -27,12 +30,12 @@ let timerFunction = function(){
 let a;
 startbtn.onclick = function(){
 
-    let curState = document.querySelector('#start').textContent;
-    if(curState === 'start'){
-        document.querySelector('#start').textContent = 'pause';
+    let curState = document.querySelector('#timer_start').textContent;
+    if(curState === 'timer_start'){
+        document.querySelector('#timer_start').textContent = 'pause';
         a = setInterval(timerFunction, 1000)
     } else {
-        document.querySelector('#start').textContent = 'start';
+        document.querySelector('#timer_start').textContent = 'start';
         clearInterval(a);
     }
 }
@@ -43,4 +46,5 @@ resetbtn.onclick = function(){
     let timeshown = document.querySelector('#w_timer h1');
     timeshown.textContent = '00:00';
 }
-
+    let minutes = document.querySelector("#m_timer").value;
+    let seconds = document.querySelector("#s_timer").value;
