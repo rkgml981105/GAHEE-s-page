@@ -1,50 +1,51 @@
-const startbtn = document.querySelector('#timer_start');
-const resetbtn = document.querySelector('#timer_reset');
+const startbutton = document.querySelector('#timer_start');
+const resetbutton = document.querySelector('#timer_reset');
 
+let minutes = document.querySelector("#m_timer").value;
+let seconds = document.querySelector("#s_timer").value;
 
 let timerFunction = function(){
-    let minutes = document.querySelector("#m_timer").value;
-    let seconds = document.querySelector("#s_timer").value;
     
-    if(seconds < 0) {
-        minutes--;
+    if(seconds == 0) {
+        minutes -= 1;
         seconds = 59;
     } else {
-        seconds--;
+        seconds -= 1;
     }
     
-    if(minutes < 10) minutes = '0' + minutes;
-    if(seconds < 10) seconds = '0' + seconds;
+    if(String(minutes).length < 2) minutes = '0' + minutes;
+    if(String(seconds).length < 2) seconds = '0' + seconds;
     let timenow = minutes + ':' +seconds;
 
     let timeshown = document.querySelector('#w_timer h1');
     timeshown.textContent = timenow;
 
-    if(minutes < 0 && seconds < 0){
+    if(minutes < 1 && seconds < 1){
         clearInterval(timerFunction);
         document.querySelector('#w_timer h1').textContent = 'TIME OVER';
         
     }
 }
 
-let a;
-startbtn.onclick = function(){
+let b;
+startbutton.onclick = function(){
 
     let curState = document.querySelector('#timer_start').textContent;
-    if(curState === 'timer_start'){
+    minutes = document.querySelector("#m_timer").value;
+    seconds = document.querySelector("#s_timer").value;
+
+    if(curState === 'start'){
         document.querySelector('#timer_start').textContent = 'pause';
-        a = setInterval(timerFunction, 1000)
+        b = setInterval(timerFunction, 1000)
     } else {
         document.querySelector('#timer_start').textContent = 'start';
-        clearInterval(a);
+        clearInterval(b);
     }
 }
 
-resetbtn.onclick = function(){
+resetbutton.onclick = function(){
     minutes = 0;
     seconds = 0;
     let timeshown = document.querySelector('#w_timer h1');
     timeshown.textContent = '00:00';
 }
-    let minutes = document.querySelector("#m_timer").value;
-    let seconds = document.querySelector("#s_timer").value;
