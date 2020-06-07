@@ -5,6 +5,7 @@ const wordsdiv = document.getElementById("words");
 const warningd = document.getElementById("warning");
 const lifecntd = document.getElementById("lifecnt");
 const formbttn = document.getElementById("formBtn");
+const firstWrd = document.getElementById("first-word");
 
 let wordlist = ["성균관대학교"]; //중복단어리스트
 
@@ -23,10 +24,11 @@ formbttn.onclick = (event) => {
     // hint) 마지막 글자로 시작하는지, 그리고 중복된 입력이 아닌지 확인
     if (userInput[0] === lastInput[lastInput.length-1] && wordlist.indexOf(userInput) === -1) {
         const result = document.createElement('span');
-        result.textContent = " => " + userInput; 
+        result.textContent = `➮ ${userInput}`; 
         wordsdiv.appendChild(result);
         wordlist.push(userInput);
         lastInput = userInput;
+        firstWrd.style.display = "none";
 
     } else {
         life -= 1;
